@@ -1,4 +1,4 @@
-/// handing Events:
+/// handling Events:
 // All react elemnts have properties that are based on "Standard DOM events"
 // For instance, for "Button" elements, we have standard events such as "onClick", "onDoubleClick", "onKeyDown", ...
 // We usually define a method to handle the event --> Then, we will only pass the address of the method

@@ -1,3 +1,4 @@
+// Adding style and attribute to a property
 import React, { Component } from "react";
 
 class MyComponent extends Component {

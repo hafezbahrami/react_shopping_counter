@@ -3,6 +3,8 @@
 // display a message "there are no tags"
 // jsx, unlike Angular, does not have if .. else if ...==> bc jsx is not a templating engine
 // we can have rendertags() method, and define if / else if , in that method
+// Using key={}  to identify each item in the list
+
 import React, { Component } from "react";
 
 class MyComp extends Component {

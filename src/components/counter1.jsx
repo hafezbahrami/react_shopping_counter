@@ -1,3 +1,4 @@
+// Conditional rendering
 import React, { Component } from "react";
 
 class MyComponent extends Component {
@@ -10,7 +11,8 @@ class MyComponent extends Component {
     return (
       <React.Fragment>
         {" "}
-        <span> {this.myCountFormatFunc()} </span> <button>MyButton</button>{" "}
+        <span> {this.myCountFormatFunc()} </span>
+        <button>MyButton</button>{" "}
       </React.Fragment>
     );
   }

@@ -8,7 +8,7 @@ import React, { Component } from "react";
 class MyComp extends Component {
   constructor() {
     super(); // because this enheritaces from Component class
-    this.handleInceremnt = this.handleInceremnt.bind(this); // this returns a handle to the function "handleInceremnt". Now, we can use "this" inside the handleInceremnt function.
+    //this.handleInceremnt = this.handleInceremnt.bind(this); // this returns a handle to the function "handleInceremnt". Now, we can use "this" inside the handleInceremnt function.
     this.doHandleIncrementForPassingArgument = this.doHandleIncrementForPassingArgument.bind(
       this
     ); // this returns a handle to the function "handleInceremnt". Now, we can use "this" inside the handleInceremnt function.
