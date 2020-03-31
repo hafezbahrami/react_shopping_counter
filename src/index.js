@@ -5,9 +5,10 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 
-import MyComponent from "./components/counter10";
+import MyComponent from "./components/counters06";
 
 //ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<MyComponent />, document.getElementById("root"));
 ReactDOM.render(<MyComponent />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change

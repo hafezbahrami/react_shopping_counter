@@ -1,13 +1,11 @@
-/// 2nd method of Passing Event Argument: a direct method
-// in the button property, we have a handle to a function, but we cannot directly pass a number to the function through the handle
-// We need to pass the function reference through the handle
-// In the code below, the actual event handler is "handleInceremnt", but in button property we call the
-// secondary event handler "doHandleIncrementForPassingArgument", through which we pass an id to the actual event handler
+/// Setting "count" in the state ={ } property to "this", so we can use this to see the "props" and its "value"
+// We will pssing the "value" to this component ==> value is accessible by: this.props.value
+
 import React, { Component } from "react";
 
 class MyComp extends Component {
-  constructor() {
-    super(); // because this enheritaces from Component class
+  constructor(props) {
+    super(props); // because this enheritaces from Component class
     //this.handleInceremnt = this.handleInceremnt.bind(this); // this returns a handle to the function "handleInceremnt". Now, we can use "this" inside the handleInceremnt function.
     this.doHandleIncrementForPassingArgument = this.doHandleIncrementForPassingArgument.bind(
       this
@@ -15,8 +13,7 @@ class MyComp extends Component {
   }
 
   state = {
-    count: 0
-    //street: "Billerica"
+    count: this.props.value
   };
 
   my_styles = {
@@ -35,6 +32,7 @@ class MyComp extends Component {
 
   render() {
     let my_attr_classes = this.getBadgeClasses();
+    console.log("props", this.props);
 
     return (
       <div>
