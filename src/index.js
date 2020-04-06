@@ -5,7 +5,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 
-import MyComponent from "./components/counters06";
+import MyComponent from "./components/counters08";
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<MyComponent />, document.getElementById("root"));
