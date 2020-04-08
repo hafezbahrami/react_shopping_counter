@@ -16,14 +16,12 @@ class MyComponents extends Component {
       { id: 4, value: 0 }
     ]
   };
-  handleDelete(counterID) {
-    // console.log(
-    //   "Delete Event Handler from a child/downstream component got called!",
-    //   counterID
-    // );
-    const my_Counters = this.state.myCounters.filter(c => c.id !== counterID);
+  handleDelete = hittedCounterID => {
+    const my_Counters = this.state.myCounters.filter(
+      c => c.id !== hittedCounterID
+    );
     this.setState({ myCounters: my_Counters });
-  }
+  };
 
   render() {
     return (
