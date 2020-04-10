@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import logo from './logo.svg';
 import NavBar from "./components/navbar";
 import "./App.css";
-import MyComponents from "./components/counters22";
+import MyComponents from "./components/counters25";
 
 class App extends Component {
   state = {
@@ -13,6 +13,19 @@ class App extends Component {
       { id: 4, value: 0 }
     ]
   };
+
+  constructor(props) {
+    super(props);
+    console.log("App - Constructor!", this.props);
+    //this.state = this.props.something;
+  }
+
+  componentDidMount() {
+    console.log("App - Mounted!");
+    // Ajax call
+    //this.setState({ listOfMovies_from_a_server });
+  }
+
   handleDelete = hittedCounterID => {
     const my_Counters = this.state.myCounters.filter(
       c => c.id !== hittedCounterID
@@ -37,6 +50,8 @@ class App extends Component {
   };
 
   render() {
+    console.log("App - Rendered!");
+
     return (
       <div>
         <NavBar

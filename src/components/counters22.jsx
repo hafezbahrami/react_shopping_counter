@@ -12,7 +12,7 @@
 //
 
 import React, { Component } from "react";
-import MyComp from "./counter21";
+import MyComp from "./counter22";
 
 class MyComponents extends Component {
   render() {
