@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import logo from './logo.svg';
 import NavBar from "./components/navbar";
 import "./App.css";
-import MyComponents from "./components/counters20";
+import MyComponents from "./components/counters22";
 
 class App extends Component {
   state = {
@@ -27,6 +27,7 @@ class App extends Component {
     });
     this.setState({ myCounters: newSetsOfCounters });
   };
+
   handleIncrement = eachCounter => {
     const myCounters = [...this.state.myCounters];
     const index = myCounters.indexOf(eachCounter);
@@ -38,7 +39,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar
+          totalCounters={this.state.myCounters.lenngth}
+          totalCountersGreatThan0={
+            this.state.myCounters.filter(c => c.value > 0).length
+          }
+        />
         <main>
           <MyComponents
             list_of_myCounters={this.state.myCounters}
