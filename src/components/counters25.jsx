@@ -1,4 +1,4 @@
-/// Lifecycle Hooks
+/// Lifecycle Hooks - Mounting Phase
 
 // Objective: our component goes through few "phases" during a life cycle
 //            (1) 1st phase: Monting phase: when an instance of a component is created, and inserted into the DOM:
