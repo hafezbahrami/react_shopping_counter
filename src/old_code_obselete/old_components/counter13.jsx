@@ -24,12 +24,12 @@ class MyComp extends Component {
   }
 
   state = {
-    value: this.props.value
+    value: this.props.val,
   };
 
   my_styles = {
     fontSize: 12,
-    fontWeight: "bold"
+    fontWeight: "bold",
   };
 
   handleInceremnt(product_id) {

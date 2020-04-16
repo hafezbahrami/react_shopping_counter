@@ -14,12 +14,12 @@ class MyComp extends Component {
 
   state = {
     count: 1,
-    street: "Billerica"
+    street: "Billerica",
   };
 
   my_styles = {
     fontSize: 12,
-    fontWeight: "bold"
+    fontWeight: "bold",
   };
   // instead of constructor, we could directly use this:
   // handleInceremnt => () {

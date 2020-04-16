@@ -31,18 +31,19 @@ class MyComponents extends Component {
       { id: 1, value: 4 },
       { id: 2, value: 0 },
       { id: 3, value: 0 },
-      { id: 4, value: 0 }
-    ]
+      { id: 4, value: 0 },
+    ],
   };
-  handleDelete = hittedCounterID => {
+  handleDelete = (hittedCounterID) => {
     const my_Counters = this.state.myCounters.filter(
-      c => c.id !== hittedCounterID
+      (c) => c.id !== hittedCounterID
     );
     this.setState({ myCounters: my_Counters });
+    console.log(hittedCounterID);
   };
 
   handleReset = () => {
-    const newSetsOfCounters = this.state.myCounters.map(item => {
+    const newSetsOfCounters = this.state.myCounters.map((item) => {
       item.value = 0;
       return item;
     });
@@ -50,6 +51,7 @@ class MyComponents extends Component {
   };
 
   render() {
+    console.log("I am here");
     return (
       <div>
         <button
@@ -60,10 +62,10 @@ class MyComponents extends Component {
           Reset{" "}
         </button>
 
-        {this.state.myCounters.map(eachCounter => (
+        {this.state.myCounters.map((eachCounter) => (
           <MyComp
             key={eachCounter.id}
-            selected={true}
+            //selected={true}
             onDelete={this.handleDelete}
             eachCounter={eachCounter}
           ></MyComp>
